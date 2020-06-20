@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ketamine CRI Calculator</title>
+    <link href="met_vet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>  
+
+        <h2>Ketamine (100 mg/ml)<br><br>
+        Ketamine Loading Dose</h2> 
+        <h3 id="threeheader">Dose for Dogs and Cats <br>0.25 - 0.5 mg/kg (250-500 μg/kg)</h3>  
+        <br>   
+    <div class="wrapper">
+        <table>
+        <tbody>
+    <tr>
+        <td><label for="weight">Animal's weight</label></td>
+        <td><input type="number"  id="weight" required value="" placeholder="kg"></td>
+    </tr>
+    <tr>
+        <td><label for="loadingDoseRate">Dose Rate mg/kg</label></td>
+        <td><input type="number"  id="loadingDoseRate" required dose rate value="" placeholder="0.25-0.5 mg/kg"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button onclick=ketaprocess() id="submitbutton">Calculate</button></td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+  <div id=result1>
+</div>
+
+    <script src=met_vet.js></script>
+
+    <h2>Ketamine Fluid Bag CRI</h2>
+        <h3 id="threeheader">Dose for Dogs and Cats <br>0.12 - 0.6 mg/kg/hr (2-10 μg/kg/min)</h3>
+        <br>     
+    <div class="wrapper">
+<table>
+    <tbody>
+<!-- <tr>
+       <td><label for="weight">Animal's weight</label></td>
+       <td><input type="number"  id="weight" required value="" placeholder="kg"></td>
+    </tr> -->
+<tr>
+    <td><label for="fluidRate">Planned Fluid Rate</label></td>
+    <td><input type="number"  id="fluidRate" required value="" placeholder="ml/kg/hr"></td>
+</tr>  
+<tr>
+    <td><label for="bag_size">Fluid Bag Size in ml</label></td>
+    <td><input type="number"  id="bag_size" required bag value="" placeholder="Example 500"></td>
+</tr>  
+<tr>      
+    <td><label for="dose_rate">Drug Dose Rate</label></td>
+    <td><input type="number" id="dose_rate" required value="" placeholder="0.12 mg/kg/hr"></td>
+</tr>
+  <tr>
+    <td></td>
+        <td>
+            <button onclick=process() id="submitbutton">Calculate</button>
+        </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div id="result">
+</div>             
+<script src="met_vet.js"></script>
+</body>
+</html>
