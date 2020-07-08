@@ -83,7 +83,7 @@ label {
       text-align: center;
       margin-top: 0.6em; 
         }
-#submitbutton {
+#submitbutton, #reloadButton, #refresh {
           border-radius: 8px;
           color: snow;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -99,3 +99,12 @@ label {
 #submitbutton:hover {
               transform: scale(1.1);
           }
+#error, #error2  {    
+    font-size: 1.3em;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(241, 36, 9);
+    width: 500px;
+    text-align: center;
+    padding: 0em;
+            } 
