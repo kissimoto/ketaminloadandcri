@@ -11,27 +11,29 @@
         <br>   
     <div class="wrapper">
         <table>
-        <tbody>
-    <tr>
-        <td><label for="weight">Animal weight (kg)</label></td>
-        <td><input type="number"  id="weight" required value="" placeholder="kg"></td>
-    </tr>
-    <tr>
-        <td><label for="loadingDoseRate">Dose Rate mg/kg</label></td>
-        <td><input type="number"  id="loadingDoseRate" required dose rate value="" placeholder="0.25-0.5 mg/kg"></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td><button onclick=ketaprocess() id="submitbutton">Calculate</button></td>
-</tr>
-</tbody>
-</table>
+            <tbody>
+                <tr>
+                    <td><label for="weight">Animal weight (kg)</label></td>
+                    <td><input type="number"  id="weight" required value="" placeholder="kg"></td>
+                </tr>
+                <tr>
+                    <td><label for="loadingDoseRate">Dose Rate (mg/kg)</label></td>
+                    <td><input type="number"  id="loadingDoseRate" required dose rate value="" placeholder="0.25-0.5 mg/kg"></td>
+                </tr>
+                <tr>
+                    <td><button onclick="myFunction()" id='reloadButton'> Change Dose </button></td>
+                    <td><button onclick=ketaprocess() id='submitbutton'>Calculate</button></td>
+                </tr>
+            </tbody>
+            </table>
 </div>
 <br>
   <div id=result1>
+<p id="error"></p>
 </div>
+    <script src=met_vet.js></script>
 
-    <script src=metvet_worksobf.js></script>
+ 
 
     <h2>Ketamine Fluid Bag CRI</h2>
         <h3 id="threeheader">Intraoperative 0.6 mg/kg/hr (10 μg/kg/min)</h3>
@@ -59,16 +61,15 @@
     </select>
 </tr> 
   <tr>
-    <td></td>
-        <td>
-            <button onclick=process() id="submitbutton">Calculate</button>
-        </td>
+        <td><button onclick="refresh()" id='refresh'> Reset Value </button></td>
+        <td><button onclick=process() id="submitbutton">Calculate</button></td>
   </tr>
 </tbody>
 </table>
 </div>
 <div id="result">
+<p id="error2"></p>
 </div>             
-<script src="metvet_worksobf.js"></script>
+<script src="met_vet.js"></script>
 </body>
 </html>
